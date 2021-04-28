@@ -1,0 +1,55 @@
+\hypertarget{timer0_8h}{}\doxysection{timer0.\+h File Reference}
+\label{timer0_8h}\index{timer0.h@{timer0.h}}
+
+
+Datoteka koja deklarise funkcije za upravaljanje tajmerom 0.  
+
+
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \mbox{\hyperlink{timer0_8h_a785a1fcef6b5bf57be7923da12642d09}{timer0\+Delay\+Ms}} (unsigned long delay\+\_\+length)
+\item 
+void \mbox{\hyperlink{timer0_8h_ad0b560c25c9814a5e047af83234c63ac}{timer0\+Interupt\+Init}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Datoteka koja deklarise funkcije za upravaljanje tajmerom 0. 
+
+\begin{DoxyAuthor}{Author}
+Aleksa Djokovic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22-\/3-\/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer0_8h_a785a1fcef6b5bf57be7923da12642d09}\label{timer0_8h_a785a1fcef6b5bf57be7923da12642d09}} 
+\index{timer0.h@{timer0.h}!timer0DelayMs@{timer0DelayMs}}
+\index{timer0DelayMs@{timer0DelayMs}!timer0.h@{timer0.h}}
+\doxysubsubsection{\texorpdfstring{timer0DelayMs()}{timer0DelayMs()}}
+{\footnotesize\ttfamily unsigned long timer0\+Delay\+Ms (\begin{DoxyParamCaption}\item[{unsigned long}]{delay\+\_\+length }\end{DoxyParamCaption})}
+
+timer0\+Delay\+Ms -\/ Funkcija koja implementira pauzu u broju milisekundi koji je prosledjen kao parametar 
+\begin{DoxyParams}{Parameters}
+{\em delay\+\_\+length} & -\/ ulaz tipa unsigned long -\/ Duzina pauze u milisekundama \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Povratna vrednost je tipa unsigned long i ima vrednost broja milisekundi proteklih od pocetka aplikacije do trenutka izlaska iz funkcije 
+\end{DoxyReturn}
+\mbox{\Hypertarget{timer0_8h_ad0b560c25c9814a5e047af83234c63ac}\label{timer0_8h_ad0b560c25c9814a5e047af83234c63ac}} 
+\index{timer0.h@{timer0.h}!timer0InteruptInit@{timer0InteruptInit}}
+\index{timer0InteruptInit@{timer0InteruptInit}!timer0.h@{timer0.h}}
+\doxysubsubsection{\texorpdfstring{timer0InteruptInit()}{timer0InteruptInit()}}
+{\footnotesize\ttfamily void timer0\+Interupt\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+timer0\+Interupt\+Init -\/ Funkcija koja inicijalizuje timer 0 tako da pravi prekide svake milisekunde \begin{DoxyReturn}{Returns}
+Nema povratnu vrednost 
+\end{DoxyReturn}

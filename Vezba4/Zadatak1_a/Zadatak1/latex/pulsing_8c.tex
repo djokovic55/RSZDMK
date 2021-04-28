@@ -1,0 +1,73 @@
+\hypertarget{pulsing_8c}{}\doxysection{pulsing.\+c File Reference}
+\label{pulsing_8c}\index{pulsing.c@{pulsing.c}}
+
+
+Datoteka koja definise pulsing.  
+
+
+{\ttfamily \#include \char`\"{}pulsing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer0.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pin.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pulsing_8c_aeec5e0b58c953636cecb070be68cc8ff}{pin\+Pulsing}} (unsigned char port, unsigned char pin, unsigned long period, unsigned char num\+\_\+of\+\_\+repetitions)
+\item 
+void \mbox{\hyperlink{pulsing_8c_a6eba30b14e7433bc5d48ae78f3682f1c}{pin\+Pulse}} (unsigned char port, unsigned char pin, unsigned long period)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Datoteka koja definise pulsing. 
+
+\begin{DoxyAuthor}{Author}
+Aleksa Djokovic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22-\/3-\/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pulsing_8c_a6eba30b14e7433bc5d48ae78f3682f1c}\label{pulsing_8c_a6eba30b14e7433bc5d48ae78f3682f1c}} 
+\index{pulsing.c@{pulsing.c}!pinPulse@{pinPulse}}
+\index{pinPulse@{pinPulse}!pulsing.c@{pulsing.c}}
+\doxysubsubsection{\texorpdfstring{pinPulse()}{pinPulse()}}
+{\footnotesize\ttfamily void pin\+Pulse (\begin{DoxyParamCaption}\item[{unsigned char}]{port,  }\item[{unsigned char}]{pin,  }\item[{unsigned long}]{period }\end{DoxyParamCaption})}
+
+pin\+Pulse -\/ Funkcija koja implementiran podizanje i spustanje vrednosti na pinu odgovarajucom brzinom 
+\begin{DoxyParams}{Parameters}
+{\em port} & -\/ ulaz tipa unsigned char -\/ Port na kojem je potrebno implementirati funkcionalnost \\
+\hline
+{\em pin} & -\/ ulaz tipa unsigned char -\/ Pin na kojem je potrebno implementirati funkcionalnost \\
+\hline
+{\em period} & -\/ ulaz tipa unsigned long -\/ Perioda promene vrednosti na pinu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nema povratnu vrednost 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pulsing_8c_aeec5e0b58c953636cecb070be68cc8ff}\label{pulsing_8c_aeec5e0b58c953636cecb070be68cc8ff}} 
+\index{pulsing.c@{pulsing.c}!pinPulsing@{pinPulsing}}
+\index{pinPulsing@{pinPulsing}!pulsing.c@{pulsing.c}}
+\doxysubsubsection{\texorpdfstring{pinPulsing()}{pinPulsing()}}
+{\footnotesize\ttfamily void pin\+Pulsing (\begin{DoxyParamCaption}\item[{unsigned char}]{port,  }\item[{unsigned char}]{pin,  }\item[{unsigned long}]{period,  }\item[{unsigned char}]{num\+\_\+of\+\_\+repetitions }\end{DoxyParamCaption})}
+
+pin\+Pulsing -\/ Funkcija koja implementira num\+\_\+of\+\_\+repetitions perioda podizanja i spustanja vrednosti na pinu odgovarajucom brzinom 
+\begin{DoxyParams}{Parameters}
+{\em port} & -\/ ulaz tipa unsigned char -\/ Port na kojem je potrebno implementirati funkcionalnost \\
+\hline
+{\em pin} & -\/ ulaz tipa unsigned char -\/ Pin na kojem je potrebno implementirati funkcionalnost \\
+\hline
+{\em period} & -\/ ulaz tipa unsigned long -\/ Perioda promene vrednosti na pinu \\
+\hline
+{\em num\+\_\+of\+\_\+repetitions} & -\/ ulaz tipa unsigned char -\/ Broj perioda koje je potrebno implementirati \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nema povratnu vrednost 
+\end{DoxyReturn}
